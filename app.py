@@ -11,7 +11,9 @@ def hey():
     if request.method == 'POST':
         firstname = request.form['firstname']
         print(firstname)
-    return render_template('name.html')
+        return render_template('name.html', firstname=firstname)
+    else:
+        return render_template('name.html')
 
 
 if __name__ == '__main__':

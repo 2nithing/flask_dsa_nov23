@@ -8,7 +8,7 @@ def hello():
 
 @app.route('/name', methods=['GET','POST'])
 def hey():
-    return ('How are you')
+    return render_template('name.html')
 
 
 if __name__ == '__main__':
